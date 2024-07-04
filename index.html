@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div
+        class="loader fixed top-0 left-0 h-[100vh] w-full bg-[#1c1c1c] z-20 flex justify-center items-center"
+      >
+        <div
+          class="loader-cursor h-[10vh] w-[10vh] rounded-full bg-[#d8d7d3] flex items-center justify-center absolute"
+        >
+          <h1 class="text-[#1c1c1c] text-[.8vw]">ENTRAR</h1>
+        </div>
+        <h1 class="text-[5vw] text-[#d8d7d3] z-50 cursor-pointer">
+          Cine Casero
+        </h1>
+      </div>
+      <div class="page1 bg-[#d8d7d3] min-h-[100vh] w-full pt-[2vw]">
+        <nav class="flex justify-between px-[6vw] items-center">
+          <svg
+            width="68"
+            height="35"
+            viewBox="0 0 68 35"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M21.866 0L0 23.85V35h67.463V0H21.866zM62.04 13.28c-.91 1.928-2.33 3.21-4.607 3.21-3.215 0-5.385-2.288-5.385-5.608 0-3.487 2.385-6 5.76-6 2.277 0 4.017 1.2 4.017 2.79 0 2.121-3.108 2.037-3.108.28 0-.49.263-.793.46-1.02.116-.135.21-.243.21-.347 0-.362-.67-.697-1.447-.697-1.902 0-3.402 1.896-3.402 4.745 0 2.734 1.42 4.437 3.483 4.437 1.178 0 2.223-.614 3.027-2.149.163-.338 1.18-.03.992.36zm-4.607 17.26c2.278 0 3.698-1.283 4.607-3.21.188-.39-.829-.697-.992-.36-.804 1.535-1.85 2.149-3.027 2.149-2.063 0-3.483-1.703-3.483-4.437 0-2.848 1.5-4.745 3.402-4.745.777 0 1.447.336 1.447.697 0 .104-.094.212-.21.348-.197.226-.46.53-.46 1.02 0 1.756 3.108 1.84 3.108-.28 0-1.591-1.74-2.79-4.017-2.79-3.375 0-5.76 2.512-5.76 6 0 3.32 2.17 5.608 5.385 5.608z"
+              fill="currentColor"
+            ></path>
+          </svg>
+          <div class="nav-right flex gap-10 text-[#484848] items-center">
+            <h3 class="font-[400]">Contact</h3>
+            <h3 class="font-[400]">Collaborate</h3>
+            <span
+              class="border-[1px] rounded-full p-5 border-black flex justify-center items-center h-[2vw] w-[2vw]"
+            >
+              <i class="ri-menu-3-fill text-[1.3vw]"></i>
+            </span>
+          </div>
+        </nav>
+        <div
+          class="page1-text w-[70%] h-[42vh] pt-8 mx-auto mt-[2vw] text-center flex flex-col justify-center items-center"
+        >
+          <h1 class="text-[2.7vw] font-[300] leading-[1.2] w-[70%]">
+            Experiences that reconnect with the past, community, memory and
+            identity.
+          </h1>
+          <h3 class="w-[35%] leading-[1.4] font-[300] mt-6">
+            We are <span class="font-[500]">Home cooking</span>, a group
+            dedicated to the preservation of family audiovisual records.
+          </h3>
+        </div>
+        <div
+          class="page1-img-gallery w-full h-[100vh] overflow-x-hidden flex justify-between gap-4 items-center relative"
+        >
+          <div
+            class="page1-img-part1 h-[45%] w-[12%] rounded-r-[1vw] shrink-0 overflow-hidden"
+          >
+            <img
+              class="h-full w-full object-cover rounded-[1vw]"
+              src="https://www.cinecasero.uy/img/g-01.jpg"
+              alt=""
+            />
+          </div>
+          <div
+            class="page1-img-part2 h-[70%] w-[20%] shrink-0 overflow-hidden flex flex-col justify-between gap-5"
+          >
+            <div
+              class="part2-img1 w-full h-[55%] rounded-[1vw] overflow-hidden"
+            >
+              <img
+                class="h-full w-full object-cover rounded-[1vw]"
+                src="https://www.cinecasero.uy/img/g-02.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="part2-img2 w-full h-[45%] rounded-[1vw] overflow-hidden"
+            >
+              <img
+                class="h-full w-full object-cover rounded-[1vw]"
+                src="https://www.cinecasero.uy/img/g-03.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="page1-img-part3 h-[50%] w-[30%] shrink-0 absolute overflow-hidden rounded-[1vw]"
+          >
+            <img
+              class="h-full w-full object-cover rounded-[1vw]"
+              src="https://www.cinecasero.uy/img/g-04.jpg"
+              alt=""
+            />
+            <h1
+              class="absolute text-[4vw] text-[#DDDCD7] text-center leading-[1.2] z-10 w-[45vw]"
+            >
+              We all have a treasure family to share
+            </h1>
+          </div>
+          <div
+            class="page1-img-part4 h-[70%] w-[20%] shrink-0 overflow-hidden flex flex-col justify-between gap-5"
+          >
+            <div
+              class="part4-img1 w-full h-[35%] rounded-[1vw] overflow-hidden"
+            >
+              <img
+                class="h-full w-full object-cover rounded-[1vw]"
+                src="https://www.cinecasero.uy/img/g-05.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="part4-img2 w-full h-[65%] rounded-[1vw] overflow-hidden"
+            >
+              <img
+                class="h-full w-full object-cover rounded-[1vw]"
+                src="https://www.cinecasero.uy/img/g-06.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="page1-img-part5 h-[45%] w-[12%] rounded-l-[1vw] shrink-0 overflow-hidden"
+          >
+            <img
+              class="h-full w-full object-cover rounded-[1vw]"
+              src="https://www.cinecasero.uy/img/g-07.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="page2 h-[100vh] w-full pt-[2vw] bg-[#1C1C1C] relative flex flex-col items-center justify-between pb-[1vw]"
+      >
+        <h1
+          class="absolute text-[2vw] font-[500] text-[#D8D7D3] text-center leading-none"
+        >
+          Real stories that convey our <br />
+          essence
+        </h1>
+        <div class="page2-top w-[70%] h-[45%] flex justify-between">
+          <div
+            class="page2-top-img h-[80%] w-[20%] opacity-70 rotate-[-6deg] relative"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover rounded-[1vw]"
+              src="https://www.cinecasero.uy/img/testimonios/01.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ this record allows me to meet him differently directly with
+              him ”...</span
+            >
+          </div>
+          <div
+            class="page2-top-img h-[80%] w-[20%]rotate-6 relative opacity-70"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover rounded-[1vw] opacity-50"
+              src="https://www.cinecasero.uy/img/testimonios/02.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ I seem to feel the texture of my mother's cloth pants
+              ”...</span
+            >
+          </div>
+          <div
+            class="page2-top-img h-[80%] w-[20%] opacity-70 rotate-[-6deg] relative"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover rounded-[1vw] opacity-50"
+              src="https://www.cinecasero.uy/img/testimonios/03.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ I think movies are that latent movement, which is always
+              there ”...</span
+            >
+          </div>
+        </div>
+        <div
+          class="page2-bottom w-[70%] h-[45%] flex justify-between items-end"
+        >
+          <div
+            class="page2-bottom-img h-[80%] rounded-[1vw] w-[20%] opacity-70 rotate-6 overflow-hidden relative mb-[3.5vw]"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover"
+              src="https://www.cinecasero.uy/img/testimonios/04.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ homemade cinema is necessary so it represents ”...</span
+            >
+          </div>
+          <div
+            class="page2-bottom-img h-[80%] rounded-[1vw] w-[20%] rotate-[-6deg] relative overflow-hidden opacity-70"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover opacity-50"
+              src="https://www.cinecasero.uy/img/testimonios/05.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ my father after this movie was made took me to see it
+              ”...</span
+            >
+          </div>
+          <div
+            class="page2-bottom-img h-[80%] rounded-[1vw] w-[20%] opacity-70 rotate-6 overflow-hidden relative mb-[3.5vw]"
+          >
+            <img
+              data-tilt
+              data-tilt-full-page-listening
+              class="h-full w-full object-cover opacity-50"
+              src="https://www.cinecasero.uy/img/testimonios/06.jpg"
+              alt=""
+            />
+            <span
+              class="text-[#D8D7D3] absolute page2-img-text leading-[1.2] tracking-tighter p-2 opacity-0 pointer-events-none"
+              >...“ it's very nice to see how family movies ” care and
+              enjoy...</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="blank-space h-[40vh] w-full bg-[#1c1c1c] mt-[-1px]"></div>
+      <div
+        class="page3 h-[100vh] w-full flex justify-center bg-[#1C1C1C] mt-[-1px]"
+      >
+        <div class="page3-box w-[70%] h-full flex justify-between">
+          <div
+            class="page3-left w-[46%] h-full flex flex-col justify-center text-[#DCDBD6]"
+          >
+            <h1 class="text-[6vw] leading-[.9] font-[600]">Home Movie Day</h1>
+            <p class="leading-[1.5] text-[.9vw] mt-[3vw]">
+              The <span class="font-[600]">Family Movie Day</span> is an open
+              and free event that is held internationally and is organized by
+              volunteers who seek to draw attention to the importance of
+              preserving amateur records, daily and domestic for the value they
+              have for the collective memory and cultural heritage of a country.
+            </p>
+            <div class="flex items-center gap-2 mt-[2vw]">
+              <span class="text-[.9vw]">TIPS TO KEEP YOUR FAMILY FILE</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+            <div class="flex items-center gap-2 mt-[.5vw]">
+              <span class="text-[.9vw]">CONTAINER DESIGN FOR YOUR MOVIES</span>
+              <i class="ri-arrow-right-line"></i>
+            </div>
+          </div>
+          <div
+            class="page3-right w-[48%] h-full flex justify-center gap-8 overflow-y-hidden"
+          >
+            <div
+              class="page3-y-top h-full w-[42%] top-40 flex flex-col justify-center relative gap-5"
+            >
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-1.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-2.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-3.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-4.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-5.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="page3-y-bottom h-full w-[42%] top-[-40%] flex flex-col justify-center relative gap-5"
+            >
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-6.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-8.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-9.jpg"
+                alt=""
+              />
+              <img
+                class="relative object-cover h-[40vh] w-full rounded-[1.5vw] shrink-0"
+                src="https://www.cinecasero.uy/img/hmd/hmd-10.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="page4 h-[100vh] w-full bg-[#1c1c1c] mt-[-1px] flex justify-center items-center relative"
+      >
+        <img
+          class="object-cover"
+          src="https://www.cinecasero.uy/img/screen.png"
+          alt=""
+        />
+        <div
+          class="page4-text absolute left-50 top-0 text-center text-[#E9E8E3] w-[20.5%] opacity-0"
+        >
+          <h3 class="font-[600] text-[1.1vw] leading-6">
+            Audiovisual creations from foundfootage in 16mm and Super 8mm.
+          </h3>
+          <span class="mt-[1.5vw] inline-block text-[.9vw]"
+            >We design multi-screen projections, on film support, that are
+            soundproofed and musicized live.</span
+          >
+          <span class="mt-[1.5vw] inline-block text-[.9vw]"
+            >We link old advertising, fiction, family, institutional, animated
+            films that are reused in a new narrative and semiotic context to
+            generate new experiences and stories.</span
+          >
+        </div>
+      </div>
+      <div class="page5 w-full h-[100vh] bg-[#1C1C1C] mt-[-1px] flex">
+        <div class="page5-left w-[46%] flex justify-center items-center">
+          <img
+            class="object-cover h-[75%] rotate-img"
+            src="https://www.cinecasero.uy/img/film.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="page5-right w-[54%] text-[#DCDBD6] flex flex-col justify-center"
+        >
+          <h1 class="text-[6vw] leading-[.9] font-[600] w-[50%]">
+            El Grton Film de Urugutoand
+          </h1>
+          <h3 class="font-[600] text-[.9vw] mt-[3.5vw] opacity-50">
+            Inspection and enhancement project of the Carlos Alonso Fund
+            Nitrates Collection.
+          </h3>
+          <span
+            class="font-[400] text-[.9vw] mt-[2vw] opacity-50 w-[65%] inline-block"
+            >Guarded by the National Archive of Image and Word – SODRE, it is
+            made up of approximately 40 film cans. Filmed in various cities and
+            landscapes across the country in the 1930s, in the form of a
+            documentary record. The collection has not been studied in depth so
+            far, therefore, the group intends to carry out an exhaustive
+            technical inspection and photographic record to contribute to the
+            diagnosis of the conservation status of the collection and its
+            preservation.</span
+          >
+          <span
+            class="font-[400] text-[.9vw] mt-[2vw] opacity-50 w-[65%] inline-block"
+            >The Gran Film del Uruguay has the support of the UCLA Library's
+            Modern Archives in Danger Program with funds from Arcadia, a charity
+            fund by Lisbet Rausing and Peter Baldwin and the support of leading
+            institutions in the country.</span
+          >
+        </div>
+      </div>
+      <div class="page6 bg-[#d8d7d3] w-full min-h-[100vh] relative">
+        <div class="side-tap-left absolute left-5 top-0 h-full w-[4%]"></div>
+        <div class="side-tap-right absolute right-5 top-0 h-full w-[4%]"></div>
+        <div
+          class="page6-part1 w-[70%] h-[200vh] flex justify-between mx-auto relative pb-[6vw]"
+        >
+          <h1
+            class="page6-part1-text text-[#a39f9a10] text-[7vw] w-[80%] absolute top-[10%] left-50 leading-[1.1] text-center font-[100] z-10"
+          >
+            Sormors un corlectivor unidor, cormprormetidor and tobiertor to lto
+            cormunidtod. Nors representton el trtobtojor en ewhatuipor, lors
+            prorcesors cretotivors and lors de investigtociorn.
+          </h1>
+          <div
+            class="page6-part1-left w-1/2 h-full flex flex-col justify-between"
+          >
+            <div
+              class="page6-part1-left-img1 h-[50vh] w-[55%] mt-[2vw] rounded-[1vw] overflow-hidden shrink-0"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://www.cinecasero.uy/img/a-1.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="page6-part1-left-img2 h-[30vh] w-[60%] rounded-[1vw] overflow-hidden shrink-0"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://www.cinecasero.uy/img/a-3.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="page6-part1-left-img3 h-[42vh] w-[50%] ml-[4vw] rounded-[1vw] overflow-hidden shrink-0 mb-[10vw]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://www.cinecasero.uy/img/a-5.jpg
+              "
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="page6-part1-right w-1/2 h-full flex flex-col justify-between items-end"
+          >
+            <div
+              class="page6-part1-right-img1 h-[45vh] w-[45%] mt-[4vw] rounded-[1vw] overflow-hidden shrink-0"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://www.cinecasero.uy/img/a-2.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="page6-part1-right-img2 h-[35vh] w-[40vh] rounded-[1vw] overflow-hidden shrink-0 mb-[10vw]"
+            >
+              <img
+                class="h-full w-full object-cover"
+                src="https://www.cinecasero.uy/img/a-4.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="page6-part2 w-[70%] h-[150vh] flex justify-between mx-auto relative pb-[6vw]"
+        >
+          <div class="page6-part2-left h-full w-1/2 relative">
+            <div class="page6-part2-left-text sticky top-0">
+              <h1 class="text-[#000] text-[6vw] leading-[.9] font[600]">
+                Nuestros servicios
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.9vw] leading-[1.5] mt-[2vw] inline-block"
+                >We are professionals who come from the field of communication,
+                audiovisual engineering and the preservation of audiovisual and
+                photographic archives.</span
+              >
+            </div>
+          </div>
+          <div
+            class="page6-part2-right h-full w-[39%] flex flex-col justify-between"
+          >
+            <div class="page6-part2-right-elem">
+              <i class="ri-question-answer-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Advice
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block"
+                >Storage, preservation and management of audiovisual collections
+                in photochemical, magnetic and digital media.</span
+              >
+            </div>
+            <div class="page6-part2-right-elem">
+              <i class="ri-pages-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Collection identification
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block text-left"
+                >We carry out identification, cataloging and diagnostic
+                evaluations to preserve audiovisual collections. We seek to
+                improve the preservation conditions of the supports to alleviate
+                their degradation and we provide advice on possible ways of
+                digitizing the material.
+              </span>
+            </div>
+            <div class="page6-part2-right-elem">
+              <i class="ri-movie-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Digital file management
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block text-left"
+                >Design of storage structures, practices and according to the
+                needs and requirements of each project. Classification and
+                identification of material, access, back-ups.
+              </span>
+            </div>
+            <div class="page6-part2-right-elem">
+              <i class="ri-settings-3-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Workshops
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block text-left"
+                >Management of personal and family audiovisual files, knowledge
+                of tools and techniques for storage, preservation, preservation,
+                access and back ups of material.
+              </span>
+            </div>
+            <div class="page6-part2-right-elem">
+              <i class="ri-vidicon-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Film Performances
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block text-left"
+                >We design performative, analog and multi-screen audiovisual
+                experiences, from found material (found footage) that are sound
+                and musicized live. We link different materials and supports -
+                16mm, super 8mm, slides - that are reused in a new narrative and
+                semiotic text, to generate new experiences and stories.
+              </span>
+            </div>
+            <div class="page6-part2-right-elem">
+              <i class="ri-timer-2-line text-[1.5vw]"></i>
+              <h1 class="text-[#000] font-[600] mt-[.3vw] text-[1vw]mt-[1.5vw]">
+                Research
+              </h1>
+              <span
+                class="text-[#000] opacity-60 text-[.8vw] mt-[.3vw] inline-block text-left"
+                >Documentation of contemporary and historical audiovisual and
+                photographic material for: academic and artistic research,
+                documentary, fiction and audiovisual works in general.
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="page6-part3 h-[100vh] w-full text-center flex justify-center items-center flex-col"
+        >
+          <h1 class="text-[#000] text-[4vw] leading-[1.1] font-[600]">
+            ¿Do you want to <br />
+            collaborate with us?
+          </h1>
+          <span
+            class="text-[#000] opacity-60 text-[.9vw] leading-[1.5] mt-[2vw] inline-block"
+            >We are a
+            <span class="font-[700] opacity-100"
+              >self-managed and independent collective.</span
+            >
+            If you want you can collaborate with our <br />
+            work through donations of films, screening teams and financial
+            resources.</span
+          >
+          <button
+            class="rounded-full bg-[#1C1C1C] text-[white] px-6 py-1.5 mt-[2vw]"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div
+        class="page7 h-2/4 w-full bg-[#1C1C1C] overflow-hidden flex justify-center items-center flex-col "
+      >
+        <span
+          class="text-[#fff] opacity-60 text-[1.2vw] leading-[1.5] mt-[2vw] inline-block"
+          >LEARN MORE ABOUT HOME CINEMA</span
+        >
+        <h1 class="text-[#fff] opacity-60 text-[5vw]">Emtoil</h1>
+        <h1 class="text-[#fff] opacity-60 text-[5vw]">Ftoceborork</h1>
+        <h1 class="text-[#fff] opacity-60 text-[5vw]">Insttogrtom</h1>
+        <h1 class="text-[#fff] opacity-60 text-[5vw]">Vimeor</h1>
+
+     
+      </div>
+      <div class="footer w-full  bg-[#1C1C1C] flex">
+        <div class="part1 w-2/6 px-[2vw] py-[2vw] h-[40vh]">
+          <svg class="c-footer-logo" width="68" height="35" viewBox="0 0 68 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 34.5V24.0444L22.0856 0.5H66.9634V34.5H21.8657H0.5Z" stroke="#EAE9E4"></path><path d="M62.0395 13.2808C61.13 15.2075 59.7102 16.4907 57.4327 16.4907C54.2169 16.4907 52.0469 14.2022 52.0469 10.8824C52.0469 7.39468 54.4318 4.88232 57.8068 4.88232C60.0843 4.88232 61.8246 6.08154 61.8246 7.67249C61.8246 9.7931 58.7163 9.70916 58.7163 7.95231C58.7163 7.17082 59.3859 6.86302 59.3859 6.58521C59.3859 6.22344 58.7163 5.88766 57.9392 5.88766C56.0378 5.88766 54.5373 7.78442 54.5373 10.6325C54.5373 13.3668 55.9572 15.0696 58.0198 15.0696C59.1979 15.0696 60.2436 14.456 61.0475 12.921C61.2106 12.5833 62.2275 12.8911 62.0395 13.2808Z" fill="#EAE9E4"></path><path d="M62.0395 27.3301C61.13 29.2569 59.7102 30.54 57.4327 30.54C54.2169 30.54 52.0469 28.2515 52.0469 24.9317C52.0469 21.444 54.4318 18.9316 57.8068 18.9316C60.0843 18.9316 61.8246 20.1309 61.8246 21.7218C61.8246 23.8424 58.7163 23.7585 58.7163 22.0016C58.7163 21.2201 59.3859 20.9123 59.3859 20.6345C59.3859 20.2728 58.7163 19.937 57.9392 19.937C56.0378 19.937 54.5373 21.8337 54.5373 24.6819C54.5373 27.4161 55.9572 29.119 58.0198 29.119C59.1979 29.119 60.2436 28.5054 61.0475 26.9704C61.2106 26.6326 62.2275 26.9404 62.0395 27.3301Z" fill="#EAE9E4"></path></svg>
+        </div>
+        <div class="part2 w-9/12 h-[40vh] bg-red-700"></div>
+        </div>
+    
+
+    </div>
+
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
